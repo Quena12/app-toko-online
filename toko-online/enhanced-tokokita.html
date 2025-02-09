@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokoKita - Belanja Online Terpercaya</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>TokoKita</h1>
+            </div>
+            
+            <button class="mobile-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#promo">Promo</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+
+                    <li>
+                        <div class="search-container">
+                            <input type="text" placeholder="Cari produk...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Selamat Datang di TokoKita</h2>
+            <p>Temukan berbagai produk berkualitas dengan harga terbaik. Pembayaran mudah melalui e-wallet dan marketplace terpercaya.</p>
+        </section>
+
+        <section id="products" class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/img/produk-1.JPG" alt="Produk 1">
+                </div>
+                <div class="product-info">
+                    <h3>Produk Premium 1</h3>
+                    <p>Deskripsi produk berkualitas tinggi dengan berbagai keunggulan</p>
+                    <p class="price">Rp 150.000</p>
+                    <div class="button-group">
+                        <button class="buy-button" onclick="buyProduct(1)">Beli</button>
+                        <button class="marketplace-button" onclick="openMarketplace(1)">Marketplace</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/img/produk-2.JPG" alt="Produk 2">
+                </div>
+                <div class="product-info">
+                    <h3>Produk Premium 2</h3>
+                    <p>Produk eksklusif dengan kualitas terbaik di kelasnya</p>
+                    <p class="price">Rp 200.000</p>
+                    <div class="button-group">
+                        <button class="buy-button" onclick="buyProduct(2)">Beli</button>
+                        <button class="marketplace-button" onclick="openMarketplace(2)">Marketplace</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/img/produk-3.JPG" alt="Produk 3">
+                </div>
+                <div class="product-info">
+                    <h3>Produk Premium 3</h3>
+                    <p>Solusi terbaik untuk kebutuhan dengan harga terjangkau</p>
+                    <p class="price">Rp 175.000</p>
+                    <div class="button-group">
+                        <button class="buy-button" onclick="buyProduct(3)">Beli</button>
+                        <button class="marketplace-button" onclick="openMarketplace(3)">Marketplace</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TokoKita</h3>
+                <p>Toko online terpercaya dengan berbagai produk berkualitas. Kami berkomitmen memberikan pelayanan terbaik untuk kepuasan pelanggan.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p>Email: info@tokokita.com</p>
+                <p>Telp: 0812-3456-7890</p>
+                <p>Alamat: Jl. Contoh No. 123, Kota</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ikuti Kami</h3>
+                <p>Dapatkan info terbaru dan promo menarik</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="float-buttons">
+        <a href="https://wa.me/6281234567890" class="float-button whatsapp-button" target="_blank">
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+        <a href="#" class="float-button cart-button" onclick="viewCart()">
+            <i class="fas fa-shopping-cart fa-2x"></i>
+        </a>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
